@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 120633110}
   - component: {fileID: 120633109}
   - component: {fileID: 120633112}
+  - component: {fileID: 120633113}
   m_Layer: 0
   m_Name: Sample
   m_TagString: Untagged
@@ -217,6 +218,18 @@ MonoBehaviour:
   refcameraScreenShot: {fileID: 859735259}
   camera0ScreenShot: {fileID: 0}
   frame: {fileID: 628263774}
+--- !u!114 &120633113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120633108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9465e2ee1eed48148a0172480518c05d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &628263772
 GameObject:
   m_ObjectHideFlags: 0
@@ -263,6 +276,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotatingCamera: {fileID: 640314117}
   rotcameraScreenShot: {fileID: 640314118}
+  degreesPerStep: 10
+  cameraAngleStartPosition: -80
   cameraIndexPosition: 0
   cameraIndexMax: 17
 --- !u!1 &640314115
@@ -353,6 +368,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraYRotation: 0
+  cameraIndexPosition: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -476,6 +492,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraYRotation: 180
+  cameraIndexPosition: 0
 --- !u!20 &859735260
 Camera:
   m_ObjectHideFlags: 0

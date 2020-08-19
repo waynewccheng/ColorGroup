@@ -7,10 +7,11 @@ public class RotatingFrame : MonoBehaviour
     public Camera rotatingCamera;
     public ScreenshotHandler rotcameraScreenShot;
 
-    const float degreesPerStep = 10f, cameraAngleStartPosition = -80f;
+    public float degreesPerStep = 10f,
+        cameraAngleStartPosition = -80f;
 
     public int cameraIndexPosition = 0;
-    public int cameraIndexMax = 17;
+    public int cameraIndexMax =  17;
     float timer = 0f;
 
     private void Awake()
@@ -26,8 +27,11 @@ public class RotatingFrame : MonoBehaviour
         // Frame rotation angle
         float angle = cameraAngleStartPosition + cameraIndexPosition * degreesPerStep;
 
-        // Update cameraYRotation for name of savedimage 
+        // Update cameraYRotation for name of saved image 
         rotcameraScreenShot.cameraYRotation = angle;
+
+        // Update cameraIndexPosition for RGb array indexing
+        rotcameraScreenShot.cameraIndexPosition = cameraIndexPosition;
 
         if (cameraIndexPosition < cameraIndexMax)
         {

@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\GameHandler.cs" />
+    <Compile Include="Assets\Scripts\ReadWriteData.cs" />
     <Compile Include="Assets\Scripts\RotatingFrame.cs" />
     <Compile Include="Assets\Scripts\ScreenshotHandler.cs" />
     <None Include="Assets\Materials\Reflectance Std.shader" />
