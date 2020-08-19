@@ -6,13 +6,13 @@ using System.IO;
 public class ReadWriteData : MonoBehaviour
 {
 
-    public static void WriteString(string path)
+    public static void WriteString(string path, string data)
     {
         //string path = "Assets/Data/test.txt";
 
         //Write some text to the test.txt file
         StreamWriter writer = new StreamWriter(path, true);
-        writer.WriteLine(path);
+        writer.WriteLine(data);
         writer.Close();
 
 
@@ -25,6 +25,26 @@ public class ReadWriteData : MonoBehaviour
     }
 
 
+    public static void WriteRGBA(string path, Color32[] rgba)
+    {
+        StreamWriter writer = new StreamWriter(path, true);
+        string s;
+        int firstIndex = 5, lastIndex;
+        for (int i = 0; i < rgba.Length; i++)
+        {
+            s = rgba[i].ToString();
+            lastIndex = s.LastIndexOf(")");
+            writer.WriteLine(s.Substring(firstIndex, lastIndex-firstIndex));
+        }
+        writer.Close();
+    }
+
+        ////Re-import the file to update the reference in the editor
+        //AssetDatabase.ImportAsset(path);
+        //TextAsset asset = Data.Load("test");
+
+        ////Print the text from the file
+     
     static void ReadString()
     {
         string path = "Assets/Data/test.txt";

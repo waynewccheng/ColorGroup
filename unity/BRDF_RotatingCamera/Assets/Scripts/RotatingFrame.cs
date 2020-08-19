@@ -6,13 +6,16 @@ public class RotatingFrame : MonoBehaviour
     private static RotatingFrame instance;
     public Camera rotatingCamera;
     public ScreenshotHandler rotcameraScreenShot;
+    public int imageWidth = 500, imageHeight = 500;
 
     public float degreesPerStep = 10f,
         cameraAngleStartPosition = -80f;
 
     public int cameraIndexPosition = 0;
-    public int cameraIndexMax =  17;
+    public int cameraIndexMax = 17;
     float timer = 0f;
+    // Color32[,] pixelsArray = new Color32[imageWidth * imageHeight, cameraIndexMax];
+    private Color32[,] pixelsArray;
 
     private void Awake()
     {
@@ -37,10 +40,15 @@ public class RotatingFrame : MonoBehaviour
         {
             transform.localRotation = Quaternion.Euler(0f,
                 cameraAngleStartPosition + cameraIndexPosition * degreesPerStep, 0f);
-            rotcameraScreenShot.TakeScreenshots(500, 500);
+            rotcameraScreenShot.TakeScreenshots(imageWidth, imageHeight);
             cameraIndexPosition += 1;
         }
     }
+
+    // private void AddToPixelArray(Color32 p, int col)
+    // {
+        
+    // }
 
 
     public void LaunchRotatingCamera()
