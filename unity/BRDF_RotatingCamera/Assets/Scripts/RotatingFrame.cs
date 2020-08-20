@@ -45,11 +45,13 @@ public class RotatingFrame : MonoBehaviour
         }
     }
 
-    // private void AddToPixelArray(Color32 p, int col)
+    // private void AddToPixelArray(Color32[] p, int col)
     // {
-        
+    //     for (int i = 0; i < p.Length; i++)
+    //     {
+    //         pixelsArray[i, col] = p[i];
+    //     }
     // }
-
 
     public void LaunchRotatingCamera()
     {
