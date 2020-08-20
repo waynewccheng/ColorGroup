@@ -9,7 +9,7 @@ public class ScreenshotHandler : MonoBehaviour
     private static ScreenshotHandler instance;
     private Camera myCamera;
     private bool takeScreenshotOnNextFrame;
-    public float cameraYRotation;
+    public int cameraYRotation;
     public int cameraIndexPosition;
     public Color32[] pixels;
 
@@ -38,7 +38,7 @@ public class ScreenshotHandler : MonoBehaviour
             // Get the RGBA pixel values
             pixels = renderResult.GetPixels32();
 
-            // Get and save png images
+            // Get teh pixels and save png images
             string imageFileName = ImageScreenShotName(renderTexture.width,
                 renderTexture.height, cameraYRotation);
             byte[] byteArray = renderResult.EncodeToPNG();
@@ -47,12 +47,26 @@ public class ScreenshotHandler : MonoBehaviour
             // Save pixel in a 2D array
             string dataFileName = DataScreenShotName(renderTexture.width,
                 renderTexture.height, cameraYRotation);
-            ReadWriteData.WriteString("Assets/Data/Test.txt", pixels[1].ToString());
-            ReadWriteData.WriteRGBA(dataFileName, pixels);
+            // ReadWriteData.WriteString("Assets/Data/Test.txt", pixels[1].ToString());
+            System.IO.File.WriteAllLines(dataFileName, Color32ToString(pixels));
 
             RenderTexture.ReleaseTemporary(renderTexture);
             myCamera.targetTexture = null;
         }
+    }
+
+    // Converts the Color32 array into a string array + string filtering
+    private string[] Color32ToString(Color32[] c)
+    {
+        string[] output = new string[c.Length];
+        int firstIndex = 5, lastIndex;
+        for (int i = 0; i < c.Length; i++)
+        {
+            output[i] = c[i].ToString();
+            lastIndex = output[i].LastIndexOf(")");
+            output[i] = output[i].Substring(firstIndex, lastIndex - firstIndex);
+        }
+        return output;
     }
 
 
@@ -63,7 +77,7 @@ public class ScreenshotHandler : MonoBehaviour
     }
 
 
-    private static string ImageScreenShotName(int width, int height, float cameraYRotation)
+    private static string ImageScreenShotName(int width, int height, int cameraYRotation)
     {
         string path = Application.dataPath;
         string imageFileName = string.Format("{0}/ScreenShots/screen_{1}x{2}_{3}.png",
@@ -71,11 +85,11 @@ public class ScreenshotHandler : MonoBehaviour
         return imageFileName;
     }
 
-    private static string DataScreenShotName(int width, int height, float cameraYRotation)
+    private static string DataScreenShotName(int width, int height, int cameraYRotation)
     {
         string path = Application.dataPath;
-       string dataFileName = string.Format("{0}/Data/screen_{1}x{2}_{3}.txt",
-            path, width, height, cameraYRotation.ToString());
+        string dataFileName = string.Format("{0}/Data/screen_{1}x{2}_{3}.txt",
+             path, width, height, cameraYRotation.ToString());
         return dataFileName;
     }
 }

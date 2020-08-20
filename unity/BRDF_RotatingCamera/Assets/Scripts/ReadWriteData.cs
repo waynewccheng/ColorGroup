@@ -34,17 +34,36 @@ public class ReadWriteData : MonoBehaviour
         {
             s = rgba[i].ToString();
             lastIndex = s.LastIndexOf(")");
-            writer.WriteLine(s.Substring(firstIndex, lastIndex-firstIndex));
+            writer.WriteLine(s.Substring(firstIndex, lastIndex - firstIndex));
         }
         writer.Close();
     }
 
-        ////Re-import the file to update the reference in the editor
-        //AssetDatabase.ImportAsset(path);
-        //TextAsset asset = Data.Load("test");
+    public static void WriteRGBA2D(string pathToFolder, Color32[,] rgbaArray)
+    {
+        string path = Application.dataPath;
+        Color32[] array = new Color32[rgbaArray.GetLength(1)];
 
-        ////Print the text from the file
-     
+        for (int j = 0; j < rgbaArray.GetLength(2); j++)
+        {
+            // Set name for each file
+            string dataFileName = string.Format("{0}/Data2/screen_{1}.txt", path, j.ToString());
+
+            // Fill 1D array
+            for (int i = 0; i < rgbaArray.GetLength(1); i++)
+                array[i] = rgbaArray[i, j];
+
+            // Write 1D array
+            WriteRGBA(dataFileName, array);
+        }
+    }
+
+    ////Re-import the file to update the reference in the editor
+    //AssetDatabase.ImportAsset(path);
+    //TextAsset asset = Data.Load("test");
+
+    ////Print the text from the file
+
     static void ReadString()
     {
         string path = "Assets/Data/test.txt";

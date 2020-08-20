@@ -8,7 +8,9 @@ public class GameHandler : MonoBehaviour
     public ScreenshotHandler refcameraScreenShot, camera0ScreenShot;
     public RotatingFrame frame;
     private bool takeReferenceCamScreenShot = true;
-    //public ReadWriteData rwdt;
+    public int imageWidth = 500, imageHeight = 500;
+    public static Color32[,] pixelsArray;
+
 
     // Start is called before the first frame update
     private void Start()
@@ -19,6 +21,9 @@ public class GameHandler : MonoBehaviour
 
         // Rotating camera
         frame = GameObject.Find("rotatingFrame").GetComponent<RotatingFrame>();
+        frame.imageWidth = imageWidth;
+        frame.imageHeight = imageHeight;
+        frame.pixelsArray = new Color32[imageWidth * imageHeight, frame.cameraIndexMax];
     }
 
 
@@ -28,16 +33,17 @@ public class GameHandler : MonoBehaviour
         // To make sure only one screenshot in taken for the reference camera
         if (takeReferenceCamScreenShot)
         {
-            refcameraScreenShot.TakeScreenshots(500, 500);
+            refcameraScreenShot.TakeScreenshots(imageWidth, imageHeight);
             takeReferenceCamScreenShot = false;
         }
 
         frame.LaunchRotatingCamera();
 
-        //if (frame.cameraIndexPosition >= frame.cameraIndexMax)
-        //{
-        //    Application.Quit();
-        //}
+        if (frame.cameraIndexPosition >= frame.cameraIndexMax)
+        {
+            // Debug.Log("HERE");
+            Application.Quit();
+        }
 
     }
 }
