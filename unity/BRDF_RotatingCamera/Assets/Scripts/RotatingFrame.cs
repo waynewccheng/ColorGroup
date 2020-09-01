@@ -6,7 +6,7 @@ public class RotatingFrame : MonoBehaviour
     private static RotatingFrame instance;
     public Camera rotatingCamera;
     public ScreenshotHandler rotcameraScreenShot;
-    public int imageWidth, imageHeight;
+    public int imageWidth = 500, imageHeight = 500;
 
     public int degreesPerStep = 10,
         cameraAngleStartPosition = -80;
@@ -45,13 +45,13 @@ public class RotatingFrame : MonoBehaviour
         }
     }
 
-    private void AddToPixelArray(Color32[] p, int col)
-    {
-        for (int i = 0; i < p.Length; i++)
-        {
-            pixelsArray[i, col] = p[i];
-        }
-    }
+    // private void AddToPixelArray(Color32[] p, int col)
+    // {
+    //     for (int i = 0; i < p.Length; i++)
+    //     {
+    //         pixelsArray[i, col] = p[i];
+    //     }
+    // }
 
     public void LaunchRotatingCamera()
     {

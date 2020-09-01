@@ -24,7 +24,6 @@ public class ReadWriteData : MonoBehaviour
         //Debug.Log(asset.text);
     }
 
-
     public static void WriteRGBA(string path, Color32[] rgba)
     {
         StreamWriter writer = new StreamWriter(path, true);

@@ -218,6 +218,8 @@ MonoBehaviour:
   refcameraScreenShot: {fileID: 859735259}
   camera0ScreenShot: {fileID: 0}
   frame: {fileID: 628263774}
+  imageWidth: 500
+  imageHeight: 500
 --- !u!114 &120633113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -276,6 +278,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotatingCamera: {fileID: 640314117}
   rotcameraScreenShot: {fileID: 640314118}
+  imageWidth: 500
+  imageHeight: 500
   degreesPerStep: 10
   cameraAngleStartPosition: -80
   cameraIndexPosition: 0
@@ -369,6 +373,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraYRotation: 0
   cameraIndexPosition: 0
+  pixels: []
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -493,6 +498,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraYRotation: 180
   cameraIndexPosition: 0
+  pixels: []
 --- !u!20 &859735260
 Camera:
   m_ObjectHideFlags: 0
