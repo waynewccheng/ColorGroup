@@ -40,7 +40,25 @@
      <Compile Include="Assets\Scripts\ReadWriteData.cs" />
      <Compile Include="Assets\Scripts\RotatingFrame.cs" />
      <Compile Include="Assets\Scripts\ScreenshotHandler.cs" />
+     <None Include="Assets\Data\screen_500x500_20.txt" />
+     <None Include="Assets\Data\screen_500x500_-30.txt" />
+     <None Include="Assets\Data\screen_500x500_-80.txt" />
+     <None Include="Assets\Data\screen_500x500_80.txt" />
+     <None Include="Assets\Data\screen_500x500_180.txt" />
+     <None Include="Assets\Data\screen_500x500_-60.txt" />
+     <None Include="Assets\Data\screen_500x500_40.txt" />
+     <None Include="Assets\Data\screen_500x500_30.txt" />
+     <None Include="Assets\Data\screen_500x500_-40.txt" />
+     <None Include="Assets\Data\screen_500x500_50.txt" />
+     <None Include="Assets\Data\screen_500x500_60.txt" />
+     <None Include="Assets\Data\screen_500x500_10.txt" />
+     <None Include="Assets\Data\screen_500x500_-70.txt" />
+     <None Include="Assets\Data\screen_500x500_0.txt" />
+     <None Include="Assets\Data\screen_500x500_-50.txt" />
+     <None Include="Assets\Data\screen_500x500_-20.txt" />
+     <None Include="Assets\Data\screen_500x500_-10.txt" />
      <None Include="Assets\Materials\Reflectance Std.shader" />
+     <None Include="Assets\Data\screen_500x500_70.txt" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -589,6 +607,18 @@
     </Reference>
     <Reference Include="Unity.TextMeshPro">
         <HintPath>C:/Users/Paul_Lemaillet/Desktop/Unity/BRDF_RotatingCamera/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder">
+        <HintPath>C:/Users/Paul_Lemaillet/Desktop/Unity/BRDF_RotatingCamera/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.Editor">
+        <HintPath>C:/Users/Paul_Lemaillet/Desktop/Unity/BRDF_RotatingCamera/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
+        <HintPath>C:/Users/Paul_Lemaillet/Desktop/Unity/BRDF_RotatingCamera/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.AddOns.Editor">
+        <HintPath>C:/Users/Paul_Lemaillet/Desktop/Unity/BRDF_RotatingCamera/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
