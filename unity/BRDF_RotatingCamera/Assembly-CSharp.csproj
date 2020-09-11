@@ -570,37 +570,37 @@
         <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-        <HintPath>C:/Users/Paul_Lemaillet/Documents/GitHub/ColorGroup/unity/BRDF_RotatingCamera/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+        <HintPath>C:/Users/Paul_Lemaillet/Desktop/Unity/BRDF_RotatingCamera/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-        <HintPath>C:/Users/Paul_Lemaillet/Documents/GitHub/ColorGroup/unity/BRDF_RotatingCamera/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+        <HintPath>C:/Users/Paul_Lemaillet/Desktop/Unity/BRDF_RotatingCamera/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder">
-        <HintPath>C:/Users/Paul_Lemaillet/Documents/GitHub/ColorGroup/unity/BRDF_RotatingCamera/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
+        <HintPath>C:/Users/Paul_Lemaillet/Desktop/Unity/BRDF_RotatingCamera/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.Editor">
-        <HintPath>C:/Users/Paul_Lemaillet/Documents/GitHub/ColorGroup/unity/BRDF_RotatingCamera/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
+        <HintPath>C:/Users/Paul_Lemaillet/Desktop/Unity/BRDF_RotatingCamera/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
-        <HintPath>C:/Users/Paul_Lemaillet/Documents/GitHub/ColorGroup/unity/BRDF_RotatingCamera/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+        <HintPath>C:/Users/Paul_Lemaillet/Desktop/Unity/BRDF_RotatingCamera/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>C:/Users/Paul_Lemaillet/Documents/GitHub/ColorGroup/unity/BRDF_RotatingCamera/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+        <HintPath>C:/Users/Paul_Lemaillet/Desktop/Unity/BRDF_RotatingCamera/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-        <HintPath>C:/Users/Paul_Lemaillet/Documents/GitHub/ColorGroup/unity/BRDF_RotatingCamera/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+        <HintPath>C:/Users/Paul_Lemaillet/Desktop/Unity/BRDF_RotatingCamera/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-        <HintPath>C:/Users/Paul_Lemaillet/Documents/GitHub/ColorGroup/unity/BRDF_RotatingCamera/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+        <HintPath>C:/Users/Paul_Lemaillet/Desktop/Unity/BRDF_RotatingCamera/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-        <HintPath>C:/Users/Paul_Lemaillet/Documents/GitHub/ColorGroup/unity/BRDF_RotatingCamera/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+        <HintPath>C:/Users/Paul_Lemaillet/Desktop/Unity/BRDF_RotatingCamera/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.AddOns.Editor">
-        <HintPath>C:/Users/Paul_Lemaillet/Documents/GitHub/ColorGroup/unity/BRDF_RotatingCamera/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+        <HintPath>C:/Users/Paul_Lemaillet/Desktop/Unity/BRDF_RotatingCamera/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-        <HintPath>C:/Users/Paul_Lemaillet/Documents/GitHub/ColorGroup/unity/BRDF_RotatingCamera/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+        <HintPath>C:/Users/Paul_Lemaillet/Desktop/Unity/BRDF_RotatingCamera/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
