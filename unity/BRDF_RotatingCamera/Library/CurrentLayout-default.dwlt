@@ -96,7 +96,7 @@ MonoBehaviour:
   m_MinSize: {x: 911, y: 442}
   m_MaxSize: {x: 22006, y: 10021}
   vertical: 0
-  controlID: 59
+  controlID: 79
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_MinSize: {x: 201, y: 442}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 117
+  controlID: 99
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -334,9 +334,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 10370000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 4cfbffff3236000036360000
+      m_ExpandedIDs: 86c7ffffa8c7ffffaac7ffffaecaffffd0caffff84cbffff72e1ffff94e1ffff96e1ffff90ecffffb2ecffff66edffff7af8ffff9cf8ffff50f9ffff4cfbffff5e3700003a390000403900005a3a0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -436,13 +436,12 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SkipHidden: 0
     m_SearchArea: 1
-    m_Folders:
-    - Assets/ScreenShots
+    m_Folders: []
   m_ViewMode: 0
   m_StartGridSize: 64
   m_LastFolders: []
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\Paul_Lemaillet\Desktop\Unity\BRDF_RotatingCamera
+  m_LastProjectPath: C:\Users\Paul_Lemaillet\Documents\GitHub\ColorGroup\unity\BRDF_RotatingCamera
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
@@ -661,9 +660,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -4.5771484, y: -1.90625, z: -10.779785}
+    m_Target: {x: 1.628378, y: 1.1725473, z: -6.2911553}
     speed: 2
-    m_Value: {x: -4.5771484, y: -1.90625, z: -10.779785}
+    m_Value: {x: 1.628378, y: 1.1725473, z: -6.2911553}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -701,7 +700,7 @@ MonoBehaviour:
       m_Fade:
         m_Target: 0
         speed: 2
-        m_Value: 1
+        m_Value: 0.100374945
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
       m_Size: {x: 1, y: 1}
@@ -709,20 +708,20 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.14878577, y: -0.8149659, z: 0.23949435, w: 0.50629747}
+    m_Target: {x: 0.14747587, y: -0.52266616, z: 0.09235654, w: 0.83459264}
     speed: 2
-    m_Value: {x: 0.14878568, y: -0.8149654, z: 0.2394942, w: 0.5062972}
+    m_Value: {x: 0.1474756, y: -0.5226652, z: 0.09235638, w: 0.83459115}
   m_Size:
-    m_Target: 10.3714285
+    m_Target: 6.7115355
     speed: 2
-    m_Value: 10.3714285
+    m_Value: 6.7115355
   m_Ortho:
     m_Target: 1
     speed: 2
     m_Value: 1
   m_CameraSettings:
     m_Speed: 1
-    m_SpeedNormalized: 0.5
+    m_SpeedNormalized: 0.49748743
     m_SpeedMin: 0.01
     m_SpeedMax: 2
     m_EasingEnabled: 1
